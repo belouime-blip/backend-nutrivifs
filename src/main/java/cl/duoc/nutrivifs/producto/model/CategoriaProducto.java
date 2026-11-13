@@ -16,9 +16,10 @@ public class CategoriaProducto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_categoria")
     private Long idCategoria;
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false, unique = true, length = 30)
     private String nombre;
-    //private String descripcion;
-
+    // el panel de administración del frontend permite escribir una descripción
+    @Column(length = 200)
+    private String descripcion;
 
 }

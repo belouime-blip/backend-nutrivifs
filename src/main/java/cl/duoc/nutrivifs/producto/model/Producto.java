@@ -17,7 +17,7 @@ public class Producto {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_producto")
     private Long idProducto;
-    @Column(nullable = false, length = 30)
+    @Column(nullable = false, length = 100)
     private String nombre;
     private String descripcion;
     private String especies;
@@ -31,7 +31,6 @@ public class Producto {
     @JoinColumn(name = "id_categoria")
     private CategoriaProducto categoria;
 
-    //pendiente: generar el codigo alfanumerico a partir del id (ejemplo M003)
-    //lo hacemos desde los dto que aun no implementamos
+    // el código alfanumérico (ME001) se genera a partir del id en ProductoService (ver ProductoDTO)
 
 }

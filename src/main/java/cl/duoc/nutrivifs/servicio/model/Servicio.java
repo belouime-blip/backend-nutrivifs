@@ -20,10 +20,11 @@ public class Servicio {
     private String nombre;
     private String descripcion;
     private String especie; // falta normalizar
-    private int duracion; // hay que convertir minutos a string de texto de la hora
+    private int duracion; // minutos; el frontend lo muestra como "30 min"
     private String observacion;
     private int precio;
-    private String consulta; // no entiendo para que sirve pero en el front está
+    // valor que el frontend envía a "Agenda tu consulta" para dejar preseleccionado el tipo de consulta
+    private String consulta;
     private String image;
     private String alt;
     @ManyToOne
@@ -31,17 +32,6 @@ public class Servicio {
     private Categoria categoria;
     private boolean enlace;
 
-    //pendiente: generar el codigo alfanumerico a partir del id (ejemplo M003)
-    //lo hacemos desde los dto que aun no implementamos
+    // el código alfanumérico (SE001) se genera a partir del id en ServicioService (ver ServicioDTO)
 
 }
-
-
-/*
-
-export interface Servicio {
-
-}
-
-*/
- 

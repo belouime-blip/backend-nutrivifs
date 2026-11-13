@@ -6,4 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductoRepository extends JpaRepository<Producto, Long> {
+
+    // para no borrar una categoría que todavía tiene productos
+    boolean existsByCategoria_IdCategoria(Long idCategoria);
 }
