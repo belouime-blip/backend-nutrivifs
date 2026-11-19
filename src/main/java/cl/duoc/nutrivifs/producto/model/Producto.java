@@ -26,6 +26,7 @@ public class Producto {
     @Column(name = "stock_critico")
     // igual spring boot lo hace automatico al cambio de nombre, no se por qué hay que hacerlo
     private int stockCritico;
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String image;
     @ManyToOne
     @JoinColumn(name = "id_categoria")

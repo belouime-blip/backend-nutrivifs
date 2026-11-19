@@ -25,6 +25,7 @@ public class Servicio {
     private int precio;
     // valor que el frontend envía a "Agenda tu consulta" para dejar preseleccionado el tipo de consulta
     private String consulta;
+    @Column(columnDefinition = "MEDIUMTEXT")
     private String image;
     private String alt;
     @ManyToOne
