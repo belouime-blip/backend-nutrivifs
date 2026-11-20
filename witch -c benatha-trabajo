@@ -1,0 +1,11 @@
+[33m< 0d66e2a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mbenatha-avances[m[33m, [m[1;32mmaster[m[33m, [m[1;32mmain[m[33m)[m add a new project to git
+[33m> b0f9af9[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/benatha-avances[m[33m)[m agrego column definition para las imagenes
+[33m> 0554e16[m swagger y carrito caro
+[33m> aae2fb4[m[33m ([m[1;31morigin/rama-caro[m[33m)[m commit prueba credenciales
+[33m> 0fc518d[m se agregan entidades usuario y rol
+[33m> bfb7cf7[m se cambian los nombres de las categorias y se refactoriza para evitar problemas  con los beans
+[33m> c575ff9[m se separaron las entidades en packages, se refactorizo
+[33m> ce87b59[m se agregan entidades Servicio y CategoriaServicio con sus capas correspondientes
+[33m> 554696d[m se agregan entidades CategoriaProducto y Producto y sus capas correspondientes
+[33m> f81a15a[m proyecto vacio desde initialzr
+[33m> e3c3e7f[m first commit
